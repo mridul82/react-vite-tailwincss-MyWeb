@@ -12,14 +12,16 @@ const Navbar = () => {
                 <div className="relative flex items-center justify-between h-16">
                     {/* Logo */}
                     <div className="flex-1 flex items-center justify-between">
-                        <h1 className="text-white font-bold">Site Name</h1> 
+                        <h1 className="text-white font-bold">
+                            <img src='logo.jpg' alt='logo' height={60} width={60} className=' rounded-full'></img>
+                        </h1> 
                         
                         <div className='hidden sm:flex justify-around p-2 m-4'>
-                            <NavLink to="/" className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md">Home</NavLink>
-                            <NavLink to="/about" className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md">About</NavLink>
-                            <NavLink to="/service" className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md">Service</NavLink>
-                            <NavLink to="/team" className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md">Team</NavLink>
-                            <NavLink to="/contact" className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md">Contact</NavLink>
+                            <NavLink to="/" className=" font-bold text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md">Home</NavLink>
+                            <NavLink to="/about" className="font-bold text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md">About</NavLink>
+                            <NavLink to="/service" className="font-bold text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md">Service</NavLink>
+                            <NavLink to="/team" className="font-bold text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md">Team</NavLink>
+                            <NavLink to="/contact" className="font-bold text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md">Contact</NavLink>
                         </div>
                         
                     </div>
@@ -36,7 +38,7 @@ const Navbar = () => {
 
                         <div className={`sm:hidden ${showLinks ? 'flex' : 'hidden'}`} 
                             style={{ flexDirection: 'column', position: 'absolute', top: '4rem', right: '0', 
-                            backgroundColor: 'lightblue', padding: '1rem', 
+                            backgroundColor: 'blue', padding: '1rem', 
                             transition: 'transform 0.3s ease-in-out', 
                             transform: showLinks ? 'translateX(0)' : 'translateX(100%)',
                             width: '15rem',
@@ -44,11 +46,11 @@ const Navbar = () => {
                         }}
                         >
                             
-                        <NavLink to="/" className="block text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md">Home</NavLink>
-                        <NavLink to="/about" className="block text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md">About</NavLink>
-                        <NavLink to="/service" className="block text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md">Service</NavLink>
-                        <NavLink to="/team" className="block text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md">Team</NavLink>
-                        <NavLink to="/contact" className="block text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md">Contact</NavLink>
+                        <NavLink to="/" className=" font-bold block text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md">Home</NavLink>
+                        <NavLink to="/about" className=" font-boldblock text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md">About</NavLink>
+                        <NavLink to="/service" className=" font-boldblock text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md">Service</NavLink>
+                        <NavLink to="/team" className=" font-boldblock text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md">Team</NavLink>
+                        <NavLink to="/contact" className="  font-bold block text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md">Contact</NavLink>
                         </div>
                     </div>
                 </div>
