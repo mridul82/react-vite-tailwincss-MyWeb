@@ -1,7 +1,7 @@
 import { useState } from 'react'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [showLinks, setShowLinks] = useState(false);
@@ -12,9 +12,9 @@ const Navbar = () => {
                 <div className="relative flex items-center justify-between h-16">
                     {/* Logo */}
                     <div className="flex-1 flex items-center justify-between">
-                        <h1 className="text-white font-bold">
+                        <Link to="/" className="text-white font-bold">
                             <img src='logo.jpg' alt='logo' height={60} width={60} className=' rounded-full'></img>
-                        </h1> 
+                        </Link> 
                         
                         <div className='hidden sm:flex justify-around p-2 m-4'>
                             <NavLink to="/" className=" font-bold text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md">Home</NavLink>
