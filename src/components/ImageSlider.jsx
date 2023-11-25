@@ -7,7 +7,7 @@ const ImageSlider = () => {
     infinite: true,
     autoplay: true,
     lazyLoad: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
     adaptiveHeight: true,
@@ -30,18 +30,37 @@ const ImageSlider = () => {
   };
 
   return (
-    <Slider {...settings} className="relative">
-      <div className="bg-gray-300 relative sm:h-80 lg:h-96">
-        <img
-          src="slider/1.jpg"
-          alt="Image 1"
-          className="w-full h-full object-cover"
-          style={{ objectFit: 'cover', objectPosition: 'center' }}
-        />
-        {/* Rest of the content */}
-      </div>
-      {/* Additional slides with similar structure */}
-    </Slider>
+    <div className="overflow-hidden">
+      <Slider {...settings} className="relative">
+        <div className="sm:h-80 lg:h-96">
+          <img
+            src="slider/1.jpg"
+            alt="Image 1"
+            className="w-full h-full object-cover"
+           
+          />
+          {/* Rest of the content */}
+        </div>
+        {/* Additional slides with similar structure */}
+        <div className="sm:h-80 lg:h-96">
+          <img
+            src="slider/2.jpg"
+            alt="Image 2"
+            className="w-full h-full object-cover"
+             />
+          {/* Rest of the content */}
+        </div>
+        <div className="sm:h-80 lg:h-96">
+          <img
+            src="slider/3.jpg"
+            alt="Image 3"
+            className="w-full h-full object-cover"
+            
+          />
+          {/* Rest of the content */}
+        </div>
+      </Slider>
+    </div>
   );
 };
 

@@ -12,8 +12,18 @@ function App() {
   return (
     <>
       <Navbar />
-      <ImageSlider />      
-      <Categories />
+      
+      <ImageSlider />
+      <div className="container mx-auto px-3">
+        
+        
+        <div className=" my-8">
+        <Categories />
+        </div>
+    
+      </div>
+           
+      
     </>  
       
     

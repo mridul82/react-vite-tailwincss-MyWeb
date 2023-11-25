@@ -3,13 +3,15 @@ import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import Card from './Card';
 
+
+
 const Categories = () => {
     const [Categories, setCategories] = useState([]);
     useEffect(() => {
         const fetchCategories = async () => {
             try {
                 const response = await axios.get('http://localhost:5000/api/categories');                
-                console.log(response.data);
+               // console.log(response.data);
             setCategories(response.data);
             } catch (error) {
                 console.error('Error fetching categories:', error);            }
@@ -25,7 +27,7 @@ const settings = {
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 5,
-    
+    centerPadding: '60px',
     responsive: [
         {
             breakpoint: 1200,
@@ -59,7 +61,8 @@ const settings = {
    
 
     <div className="px-4 mb-4"> 
-    <h2 className="text-2xl font-bold mb-4">Categories</h2>       
+    <h2 className="text-2xl font-bold mb-4">Categories</h2>
+
             <Slider {...settings}>
                 {Categories.map((category) => (
                     <div key={category.id}>
@@ -67,6 +70,9 @@ const settings = {
                     </div>
                 ))}
             </Slider>
+            <div>
+                
+            </div>
         </div>
 
    
