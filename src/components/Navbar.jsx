@@ -15,7 +15,7 @@ const Navbar = () => {
                         <Link to="/" className="text-white font-bold flex items-center">
                             <img src='logo.jpg' alt='logo' height={60} width={60} className='rounded-full' />
                             {/* You can adjust the spacing between the logo and text */}
-                            <span className="ml-2">Your Brand</span>
+                            <span className="ml-2">SDE</span>
                         </Link> 
                     </div>
 
