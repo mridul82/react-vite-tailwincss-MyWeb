@@ -36,7 +36,7 @@ const ImageSlider = () => {
           <img
             src="slider/1.jpg"
             alt="Image 1"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover opacity-80 "
            
           />
           {/* Rest of the content */}
@@ -46,7 +46,7 @@ const ImageSlider = () => {
           <img
             src="slider/2.jpg"
             alt="Image 2"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover opacity-80 "
              />
           {/* Rest of the content */}
         </div>
@@ -54,7 +54,7 @@ const ImageSlider = () => {
           <img
             src="slider/3.jpg"
             alt="Image 3"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover opaz"
             
           />
           {/* Rest of the content */}

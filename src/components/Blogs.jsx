@@ -28,7 +28,7 @@ const Blogs = () => {
 
     <div className=' px-4 mb-4'>
         <h2 className="text-2xl font-bold mb-4">Blogs:</h2>
- <div className=' grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 rounded-lg'>
+ <div className=' grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3'>
         
         {posts.map((post) => (
           <BlogCard key={post.id} post={post} />

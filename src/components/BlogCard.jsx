@@ -3,7 +3,7 @@ import React from 'react'
 
 const BlogCard = ({post}) => {
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg mb-6">
+    <div className="max-w-sm overflow-hidden shadow-lg mb-6 rounded-2xl">
       <img src={post.image} alt={post.title} className="w-full h-48 object-cover" />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{post.title}</div>
